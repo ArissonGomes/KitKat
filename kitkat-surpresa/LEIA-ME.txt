@@ -1,0 +1,20 @@
+# Surpresa para a Kitkat 💗
+
+## Testar no seu computador
+1. Extraia o ZIP.
+2. Abra a pasta `kitkat-surpresa`.
+3. Abra `index.html` no navegador.
+
+## Enviar por link
+Para publicar, use um serviço de hospedagem de site estático, como Netlify:
+1. Entre no Netlify e crie uma conta, se ainda não tiver.
+2. Procure a opção de adicionar/deploy manual de um site.
+3. Envie a pasta do projeto (ou arraste a pasta descompactada, conforme a interface do serviço).
+4. Aguarde a publicação e copie o link gerado para enviar à Kitkat.
+
+Mantenha `index.html` e a pasta `fotos` juntos. As fotos são carregadas localmente pela página.
+
+## Personalizar a carta
+Abra `index.html` em um editor e procure `id="letter"`. Substitua o texto da carta pelo que você quiser dizer quando decidir o motivo do pedido de desculpas.
+
+A página não envia as respostas para você; elas só aparecem na tela dela. Para registrar respostas seria necessário criar e hospedar um backend.

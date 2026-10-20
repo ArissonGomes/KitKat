@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff4f6">
+<title>Para minha Kitkat 💗</title>
+<style>
+:root{--pink:#e85d82;--deep:#7e2945;--soft:#fff4f6;--cream:#fffaf5;--ink:#492b36;--muted:#896b77}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top,#ffe0e8 0,#fff7f8 38%,#fffaf5 100%);color:var(--ink);font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(900px,92vw);margin:auto}
+.hero{min-height:92svh;display:grid;place-items:center;text-align:center;padding:52px 0 38px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#f2a4b9;font-size:clamp(90px,18vw,180px);opacity:.23;transform:rotate(-18deg)}
+.hero:before{left:-20px;top:8%}.hero:after{right:-10px;bottom:6%;transform:rotate(18deg)}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;color:var(--pink);font-size:.75rem;font-weight:800}
+h1{font-family:Georgia,serif;font-size:clamp(3rem,10vw,6.3rem);line-height:.95;margin:18px 0;color:var(--deep);font-weight:500}
+h1 span{color:var(--pink);font-style:italic}
+.subtitle{font-size:clamp(1rem,3vw,1.2rem);line-height:1.7;color:var(--muted);max-width:540px;margin:20px auto 28px}
+.cover{width:min(340px,72vw);aspect-ratio:4/5;object-fit:cover;border:10px solid white;border-radius:7px;box-shadow:0 18px 55px #9c3b5b2b;transform:rotate(-3deg);margin:8px auto 26px}
+.primary,.choice{border:0;border-radius:999px;padding:14px 24px;font-weight:750;box-shadow:0 8px 22px #c8507422;transition:transform .2s,box-shadow .2s}
+.primary{background:var(--pink);color:white}.primary:hover,.choice:hover{transform:translateY(-2px);box-shadow:0 12px 26px #c8507433}
+section{padding:66px 0}
+.section-title{text-align:center;font:500 clamp(2rem,6vw,3.5rem)/1.1 Georgia,serif;color:var(--deep);margin:0 0 14px}
+.section-intro{text-align:center;color:var(--muted);line-height:1.7;max-width:600px;margin:0 auto 30px}
+.paper{background:#fffdfc;border:1px solid #f7dce4;border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 18px 50px #9c3b5b12;max-width:650px;margin:0 auto;text-align:center}
+.counter{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:800}
+.question{font:500 clamp(1.65rem,5vw,2.5rem)/1.25 Georgia,serif;margin:18px 0 24px;color:var(--deep)}
+.choices{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.choice.yes{background:var(--pink);color:white}.choice.no{background:#fff0f4;color:var(--deep);border:1px solid #f3c8d5}
+.feedback{min-height:52px;color:var(--muted);line-height:1.6;margin:20px 0 0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+.photo-card{margin:0;background:#fff;border:7px solid #fff;border-bottom-width:14px;box-shadow:0 10px 30px #69263b14;transform:rotate(var(--tilt));border-radius:4px;overflow:hidden}
+.photo-card:nth-child(3n+1){--tilt:-2deg}.photo-card:nth-child(3n+2){--tilt:1.5deg}.photo-card:nth-child(3n){--tilt:-.5deg}
+.photo-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#fbe5eb}
+.photo-card figcaption{font:italic .9rem Georgia,serif;text-align:center;padding:10px 3px 0;color:#76505e}
+.letter{font:1.08rem/1.95 Georgia,serif;text-align:left;white-space:pre-line}
+.letter strong{color:var(--deep)}
+.signature{font:italic 1.6rem Georgia,serif;color:var(--pink);text-align:right;margin-top:20px}
+.edit-note{font-size:.85rem;color:var(--muted);text-align:center;margin-top:18px}
+footer{text-align:center;padding:36px 0 48px;color:var(--muted);font-size:.9rem}
+.heart{display:inline-block;color:var(--pink);animation:pulse 1.5s infinite}
+.hidden{display:none!important}
+@keyframes pulse{50%{transform:scale(1.2)}}
+@media(max-width:650px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo-card{border-width:5px;border-bottom-width:12px}.photo-card figcaption{font-size:.78rem}.hero{min-height:95svh}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">uma coisinha feita com carinho</div>
+    <h1>Oi, <span>Kitkat</span> 💗</h1>
+    <p class="subtitle">Guardei algumas das nossas memórias aqui… e queria te dizer uma coisa com todo o carinho do mundo.</p>
+    <img class="cover" src="fotos/memoria-2.jpg" alt="Uma foto nossa juntinhos">
+    <div><button class="primary" onclick="document.querySelector('#perguntas').scrollIntoView({behavior:'smooth'})">Abre aqui, meu bem ↓</button></div>
+  </div>
+</header>
+
+<main>
+<section id="perguntas">
+  <div class="wrap">
+    <h2 class="section-title">Posso te perguntar uma coisa?</h2>
+    <p class="section-intro">Responde do seu jeitinho. Fiz isso pensando em você. ❤️</p>
+    <div class="paper">
+      <div class="counter" id="counter">pergunta 1 de 3</div>
+      <div class="question" id="question">Você sabe que é muito especial pra mim?</div>
+      <div class="choices" id="choices">
+        <button class="choice yes" onclick="answer('sim')">Sim ❤️</button>
+        <button class="choice no" onclick="answer('nao')">Não 🙈</button>
+      </div>
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+      <button class="primary hidden" id="next" onclick="nextQuestion()">Próxima 💌</button>
+    </div>
+  </div>
+</section>
+
+<section id="memorias">
+  <div class="wrap">
+    <h2 class="section-title">Nossas pequenas grandes memórias</h2>
+    <p class="section-intro">Cada foto tem um pedacinho da nossa história. E eu gosto de ter você nela.</p>
+    <div class="gallery">
+      <figure class="photo-card"><img src="fotos/memoria-1.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Só mais um dos meus motivos favoritos ❤️</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-2.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>A gente sendo a gente 🥹</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-3.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Uma memória que eu guardaria mil vezes</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-4.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Minha companhia favorita</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-5.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Até nas fotos espontâneas eu vejo a gente</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-6.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Meu lugar favorito é perto de você</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-7.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Nós dois e nossas palhaçadas 🤍</figcaption></figure>
+      <figure class="photo-card"><img src="fotos/memoria-8.jpg" alt="Foto de uma memória nossa" loading="lazy"><figcaption>Mais uma lembrança pra guardar</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="carta">
+  <div class="wrap">
+    <h2 class="section-title">Uma cartinha pra você 💌</h2>
+    <div class="paper">
+      <div class="letter" id="letter">Minha Gatinha,
+
+Sei que você tá brava comigo meu amorzinho, diculpa eu, num sei como você me aguenta, mas não é pra parar de me aguentar :P
+
+Eu fiz esse sitezinho pra pedir desculpas mas também pra gente lembrar um cadin desses 2 anos que a gente tá rindo junto
+
+Gosto sempre de lembrar os momentos que a gente passou junto, cada ida no BK, cada lugar longe que a gente foi
+
+E também cada momentinho fazendo as coisas do dia a dia, como se já estivéssemos casados na nossa casinha
+
+Quero casar com você logo meu amor, é muito bom conversar com você, fiquei querendo te chamar pra descer ontem e ficar papeando comigo e dormir na minha casa 
+
+Eu sonho com o dia que a gente vai tá morando juntos, vivendos juntos, fazendo tudo junto (vou fazer você enjoar de mim :D)
+
+Para me enrolar cara, quero viver isso logo
+
+Eu ti amo meu neném
+
+Com amor,</div>
+      <div class="signature">Tomzinho tocando Guitarra <span class="heart">♥</span></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Feito com carinho, só pra você, Gatinha. <span class="heart">♥</span></footer>
+
+<script>
+const questions = [
+ {q:"Você sabe que é muito especial pra mim?",yes:"Espero que você nunca esqueça disso, Kitkat. ❤️",no:"Então deixa eu te lembrar com carinho: você é muito especial pra mim. 💗"},
+ {q:"Posso te ouvir e conversar com você de coração aberto?",yes:"Quero te ouvir de verdade, sem interromper e sem diminuir o que você sente. 🤍",no:"Tudo bem, meu bem. Respeito seu tempo. Quando você quiser conversar, eu vou te ouvir. 🤍"},
+ {q:"Você aceita receber essa cartinha e essas memórias?",yes:"Preparei tudo pensando em nós. Obrigado por chegar até aqui. 🥹",no:"Tudo bem. Não precisa responder nada agora. Espero que as fotos te tragam pelo menos um sorriso. 🌷"}
+];
+let current=0;
+function answer(value){
+ const q=questions[current];
+ document.getElementById('feedback').textContent=value==='sim'?q.yes:q.no;
+ document.getElementById('choices').classList.add('hidden');
+ document.getElementById('next').classList.remove('hidden');
+}
+function nextQuestion(){
+ current++;
+ if(current>=questions.length){
+   document.getElementById('counter').textContent='um último recadinho';
+   document.getElementById('question').textContent='Obrigado por olhar esse pedacinho do meu coração. ❤️';
+   document.getElementById('feedback').textContent='Quando você quiser, quero conversar com você de verdade.';
+   document.getElementById('next').textContent='Ver nossa cartinha 💌';
+   document.getElementById('next').onclick=()=>document.querySelector('#carta').scrollIntoView({behavior:'smooth'});
+   document.getElementById('next').classList.remove('hidden');
+   return;
+ }
+ document.getElementById('counter').textContent=`pergunta ${current+1} de ${questions.length}`;
+ document.getElementById('question').textContent=questions[current].q;
+ document.getElementById('feedback').textContent='';
+ document.getElementById('choices').classList.remove('hidden');
+ document.getElementById('next').classList.add('hidden');
+}
+</script>
+</body>
+</html>
